@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fbfaf8"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <TextView
+
+        android:id="@+id/contactusheding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/aldrich"
+        android:text="Contact Us"
+        android:textColor="#452B03"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/description_contact"
+        android:layout_height="wrap_content"
+        android:text="Please contact us through these channels"
+        android:layout_below="@id/contactusheding"
+        android:textAlignment="center"
+        android:layout_marginTop="60dp"
+        android:textStyle="bold"
+        android:textColor="#221D1D"
+        android:textSize="20sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:outlineSpotShadowColor="@color/black"
+        android:layout_below="@id/description_contact">
+
+
+        <ImageView
+            android:id="@+id/phone_pic"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/ic_baseline_phone_24"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/phoneno"
+            android:layout_toRightOf="@id/phone_pic"
+            android:textColor="#131313"
+            android:text="03318507598"/>
+        <ImageView
+            android:id="@+id/emailphoto"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/phone_pic"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/ic_baseline_email_24"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/emailtext"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/emailphoto"
+            android:layout_below="@id/phoneno"
+            android:textColor="#131313"
+            android:text="Saafcity@gmail.com"/>
+        <ImageView
+            android:id="@+id/fbphoto"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/emailphoto"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/facebook"/>
+        <TextView
+            android:id="@+id/fbtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/fbphoto"
+            android:layout_below="@id/emailtext"
+            android:textColor="#131313"
+            android:text="Facebook.com/SaafCity"/>
+    </RelativeLayout>
+</RelativeLayout>

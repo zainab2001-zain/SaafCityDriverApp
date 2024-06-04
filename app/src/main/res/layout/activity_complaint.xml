@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComplaintActivity">
+
+    <TextView
+        android:id="@+id/heading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="100dp"
+
+        android:fontFamily="sans-serif-condensed"
+        android:text="Complaint # "
+        android:textAlignment="center"
+        android:textColor="#071508"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/heading1"
+        android:layout_marginTop="100dp"
+       />
+    <TextView
+        android:id="@+id/description"
+        android:layout_below="@id/heading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:text="Please press button when vehicle starts"/>
+
+    <ImageView
+        android:id="@+id/images"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_below="@id/description"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+
+        android:src="@drawable/whatsapp_image_2022_10_30_at_19_00_12_removebg_preview"/>
+    <TextView
+        android:id="@+id/location"
+        android:layout_below="@id/images"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+ android:layout_marginLeft="100dp"
+        android:text="Location: "/>
+    <TextView
+        android:id="@+id/locationuser"
+        android:layout_below="@id/images"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+      android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/location"
+       />
+
+
+
+    <Button
+        android:id="@+id/startbtn"
+        android:layout_width="167dp"
+        android:layout_height="54dp"
+        android:text="Start"
+        android:textSize="17sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/locationuser"
+        android:backgroundTint="@color/design_default_color_on_secondary"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
